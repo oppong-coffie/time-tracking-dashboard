@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    margin-top: 150px;
+    display: flex;
+    margin-left: 100px;
+}
+.profile{
+    width: 20%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+}
+.menu{
+    color: rgb(133, 133, 133);
+    margin-left: 30px;
+}
+.active{
+    color: white;
+}
+.innerprofile{
+    padding-top: 45px;
+    padding-left: 45px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+}
+.pic>img{
+    width: 75px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-bottom: 35px;
+}
+.name{
+    color: white;
+    font-size: 32px;
+}
+.report-for{
+    color: rgb(201, 201, 201);
+    margin-top: 15px;
+}
+
+/* Content */
+.content{
+    width: 75%;
+}
+.content-container1{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+}
+.content-container2{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.work{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(15, 100%, 70%);
+}
+.play{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(195, 74%, 62%);
+}
+.study{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(145, 58%, 55%);
+}
+.social{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(264, 64%, 52%);
+}
+.self-care{
+    width: 33.3%;
+    border-radius: 10px;
+    background-color: hsl(43, 84%, 65%);
+}
+.act-icon{
+    text-align: right;
+    height: 46px;
+    overflow-y: hidden;
+
+}
+.act-icon>img{
+    /* width: 34px; */
+    margin-top: -10px;
+}
+.inner{
+    background-color: hsl(235, 46%, 20%);
+    padding: 32px;
+    border-radius: 10px;
+
+    }
+.headtop{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+.hours{
+    font-size: 48px;
+    color: white;
+}
+.last{
+    color: rgb(197, 197, 197);
+}
+
+/* CSS for tablet screens */
+@media (max-width: 768px) {
+
+    .container{
+        margin-top: 170px;
+        margin-left: 20px;
+    }
+    .profile{
+        width: 25%;
+    }
+    .menu{
+        margin-left: 30px;
+    }
+    .active{
+        color: white;
+    }
+    .innerprofile{
+        padding-left: 20px;
+    }
+    
+    /* Content */
+    .content{
+        width: 70%;
+    }
+    .content-container1{
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .content-container2{
+        gap: 10px;
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+
+}
+
+
+/* CSS for standard-sized phones (e.g., iPhone 6/7/8) */
+@media (max-width: 375px) {
+
+    .container{
+        margin-top: 50px;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile{
+        width: 100%;
+    }
+    .menu{
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .active{
+        color: white;
+    }
+    .innerprofile{
+        display: flex;
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-bottom: 0px;
+    }
+    .pic>img{
+        width: 55px;
+        margin-bottom: 35px;
+        margin-right: 20px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .report-for{
+        margin-top: 10px;
+    }
+    
+    /* Content */
+    .content{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .content-container1{
+        display: block;
+        margin-left: 0px;
+    }
+    .content-container2{
+        display: block;
+        margin-left: 0px;
+    }
+    .work{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .play{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .study{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .exercise{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .social{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .self-care{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .inner{
+        padding: 30px;    
+        }
+    .headtop{
+        font-size: 18px;
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+    .hours{
+        font-size: 25px;
+    }
+    .rrr{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
