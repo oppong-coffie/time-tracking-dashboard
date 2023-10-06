@@ -23,7 +23,15 @@ var selfcareprevious = $('#selfcareprevious');
 
 // Function to change text for daily
 daily.click(function() {
-
+    daily.addClass('highlight');
+    
+    if (weekly.hasClass('highlight')) {
+        weekly.removeClass('highlight');
+    }
+    if (monthly.hasClass('highlight')) {
+        monthly.removeClass('highlight');
+    }
+    
     workhours.text('5hrs');
     workprevious.text('Last week - 7hrs ');
 
@@ -42,11 +50,18 @@ daily.click(function() {
     selfcareprevious.text('Last week - 0hrs ');
     selfcarehours.text('1hrs');
 
-    daily.toggleClass('active');
 });
 
 // Function to change text for weekly
 weekly.click(function() {
+    weekly.addClass('highlight');
+    
+    if (daily.hasClass('highlight')) {
+        daily.removeClass('highlight');
+    }
+    if (monthly.hasClass('highlight')) {
+        monthly.removeClass('highlight');
+    }
 
     workhours.text('32hrs');
     workprevious.text('Last week - 36hrs ');
@@ -66,11 +81,19 @@ weekly.click(function() {
     selfcareprevious.text('Last week - 2hrs ');
     selfcarehours.text('2hrs');
 
-    weekly.toggleClass('active');
+    // weekly.toggleClass('active');
 });
 
 // Function to change text for monthly
 monthly.click(function() {
+    monthly.addClass('highlight');
+    
+    if (weekly.hasClass('highlight')) {
+        weekly.removeClass('highlight');
+    }
+    if (daily.hasClass('highlight')) {
+        daily.removeClass('highlight');
+    }
 
     workhours.text('103hrs');
     workprevious.text('Last week - 128hrs ');
